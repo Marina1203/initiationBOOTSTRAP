@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+    background: lightgreen;
+}
+.card-title {
+    background: purple;
+    color: antiquewhite;
+}
+.card-title2 {
+    background: green;
+    color: blue;
+   
+}
+.card-link {
+    background: yellowgreen;
+    color: azure;
+}
+
+
+
+ .fond_orange {
+    background: rgb(255, 0, 0);
+}
+.fond_bleu {
+    background: lightseagreen;
+} 
+.fond_jaune {
+    background: yellow;
+}

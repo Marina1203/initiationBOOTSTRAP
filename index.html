@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Bootstrap CCS -->
+    <title>Initiation Bootstrap 4: accueil</title>
+    <link href="css/style.css" rel="stylesheet">
+    
+</head>
+<body>
+   <div class="container"> 
+       <!-- une navbar faite avec bootstrap -->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-primary "> <!-- la nav est class navbar sur fond sombre, avec un bg (background) qui s"etend sur un lg -->
+
+        <a href="index.html" class="navbar-brand">InitiationBOOTSTRAP 4</a>
+        <!-- le bouton pour le menu responsive -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
+
+            <span class="navbar-toggler-icon"></span>
+        </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- une ul est dans une div avec une class et id -->
+           <ul class="navbar-nav ml-auto"> <!-- navbar-nav supprime des puces ml auto empecher les débordements de la navbar-->
+               <li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+               <li class="nav-item"><a href="#" class="nav-link">A propos de nous</a></li>
+              <!-- ici nous mettons un menu deroulant -->
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Voir nos produits</a>
+                  <!-- les sousrubriques de la rubrique produits dans une div class dropdown-menu -->
+            <div class="dropdown-menu">
+                      <a href="#" class="dropdown-item">Produit 1</a>
+                      <a href="#" class="dropdown-item">Produit 2</a>
+                      <div class="dropdown-divider"></div>
+                      <a href="#" class="dropdown-item">Autres produits</a>
+
+            </div>   
+
+
+              </li>
+               <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+           </ul>
+        </div>
+       </nav>
+       <!-- ici on va mettre une section en pleine largeur sous la nav "a hero section", chez Bootstrap un "Jumbotron" c'est un composant de Bootstrap-->
+       <div class="jumbotron">
+           <h1 class="display-4">À la une ce lundi 04 juin 2018: bientôt l'été !!!</h1>
+           <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates alias repellendus unde maiores maxime, commodi iusto aliquam eos ab harum aliquid, repudiandae amet quae totam ullam libero error, quo tempora?</p>
+          <p class="lead"> 
+              <a href="#" class="btn btn-lg btn-primary" role="button">Preparez l'été...</a></p>
+
+       </div> <!-- fin de la div jumbotron -->
+       <!-- ici commence la grille de BOOTSTRAP avec des rangées et des colonnes: 3 colonnes-->
+       <div class="row">
+           <div class="col-sm-12 col-md-4"> <!-- col-sm-12 sur un ecran small12 col de largeur, sur un ecran medium 4 col de largeur -->
+                 <div class="card md-4">
+                    <div class="card-body text-center">
+                           <h5 class="card-title">Un titre h5 "card" /1</h5>
+                           <p class="card-text">Un petit texte dans une carte  ,"a card" </p>
+                        <a href="#" class="card-link">Un lien</a></div>
+                    </div> <!-- fin de div card-body -->
+                 </div> <!-- fin de div class card -->
+               <div class="col"> 
+                    <div class="card">
+                            <div class="card-body text-center">
+                                   <h5 class="card-title">Un titre h5 "card"/2</h5>
+                                   <p class="card-text">Un petit texte dans une carte  ,"a card" </p>
+                                <a href="#" class="card-link">Un lien</a></div>
+                            </div><!-- fin de div card-body -->
+                         </div> <!-- fin de div card-body -->
+                 
+               <div class="col">
+                    <div class="card">
+                            <div class="card-body text-center">
+                                   <h5 class="card-title">Un titre h5 "card"/3</h5>
+                                   <p class="card-text">Un petit texte dans une carte  ,"a card" </p>
+                                <a href="#" class="card-link">Un lien</a></div>
+                            </div><!-- fin de div card-body -->
+                         </div> <!-- fin de div card-body -->
+              
+          
+
+       </div> <!-- fin de la classe div row -->
+       <div class="row mt-sm-4 mt-md-0"> <!-- une nouvelle rangéee 2-->
+        <div class="col-sm-12 col-md-8 text-sm-center text-md-left">
+            <h3>Un titre h3</h3>
+            <p class="lead">Un paragraphe class lead</p> <!-- la class lead vient après le titre -->
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <!-- navigation verticale -->
+            <h3>Menu secondaire</h3>
+            <ul class="nav flex-column nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active">
+                     Accueil</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                     Lien 1</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                     Lien 2</a> </li>
+                <li class="nav-item"><a href="#" class="nav-link">
+                     Lien 3</a></li>
+            </ul>
+        </div>
+       </div> <!-- fin de la nouvelle rangée 2 -->
+     
+       <div class="row">
+            <div class="col-md-12 col-lg-3">
+                    <div class="card">
+                      <div class="card-body">
+                            <h3 class="card-title2">Marina 1</h3>
+                            <p class="lead fond_bleu">Salut c"est moi</p>
+                            <p class="fond_jaune">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt mollitia obcaecati quod velit, saepe, cupiditate animi, repudiandae rem magni perspiciatis alias tempora? Nostrum eveniet, nihil illum labore asperiores sequi minima.</p>
+                            <a href="#" class="card-link fond_orange">Lien1</a>
+                      </div>
+                    </div>
+                </div>
+       
+           <div class="col-md-6 col-lg-3">
+               <div class="card">
+                <div class="card-body">
+                       <h3 class="card-title2">Marina 2</h3>
+                       <p class="lead fond_bleu">Salut cest moi</p>
+                       <p class="fond_jaune">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt mollitia obcaecati quod velit, saepe, cupiditate animi, repudiandae rem magni perspiciatis alias tempora? Nostrum eveniet, nihil illum labore asperiores sequi minima.</p>
+                       <a href="#" class="card-link fond_orange">Lien 2</a>
+                </div>
+                </div>
+           </div>
+           <div class="col-md-6 col-lg-3">
+               <div class="card">
+                 <div class="card-body">
+                       <h3 class="card-title2">Marina 3</h3>
+                       <p class="lead fond_bleu">Salut c"est moi</p>
+                       <p class="fond_jaune">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt mollitia obcaecati quod velit, saepe, cupiditate animi, repudiandae rem magni perspiciatis alias tempora? Nostrum eveniet, nihil illum labore asperiores sequi minima.</p>
+                       <a href="#" class="card-link fond_orange">Lien 2</a>
+                 </div>
+               </div>
+           </div>
+           <div class="col-md-6 col-lg-3">
+                <div class="card">
+                  <div class="card-body">
+                        <h3 class="card-title2">Marina 3</h3>
+                        <p class="lead fond_bleu">Salut c"est moi</p>
+                        <p class="fond_jaune">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt mollitia obcaecati quod velit, saepe, cupiditate animi, repudiandae rem magni perspiciatis alias tempora? Nostrum eveniet, nihil illum labore asperiores sequi minima.</p>
+                        <a href="#" class="card-link fond_orange">Lien 2</a>
+                  </div>
+                </div>
+            </div>
+           
+       </div>
+   </div> <!-- fin de la div container -->
+   <footer class="text-center mt-4">
+       <div class="container bg-secondary">
+           <div class="row">
+               <div class="col-lg-12">
+                   <div class="card-footer text-center text-warning">
+                       <div class="card-body">
+                           <h5>Marina</h5>
+                           <p class="card-text">Le pied de la page</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    </footer>
+    <!-- Optional Javascript -->
+    <!-- jQuery first, then Poper.js, then Bootstrap JS -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
