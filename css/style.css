@@ -4,11 +4,11 @@ body {
     background: lightgreen;
 }
 .card-title {
-    background: purple;
+    background: rgb(245, 106, 245);
     color: antiquewhite;
 }
 .card-title2 {
-    background: green;
+    background: yellowgreen;
     color: blue;
    
 }
@@ -23,8 +23,11 @@ body {
     background: rgb(255, 0, 0);
 }
 .fond_bleu {
-    background: lightseagreen;
+    background: rgb(13, 241, 230);
 } 
 .fond_jaune {
-    background: yellow;
+    background: rgb(238, 130, 238);
+}
+.carousel-caption {
+    background-color: rgba(26, 169, 236, 0.445)
 }
